@@ -574,60 +574,66 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
   flex-wrap: wrap;
   margin-top: 2em;
 }
-#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list > * {
-  padding: 1em;
+#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad {
+  padding: 2em;
   flex: 0 1 33.33333333%;
-  display: flex;
-  flex-direction: column;
-}
-#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list > * > * {
-  max-width: 100%;
 }
 @media screen and (max-width: 576px) {
-  #site-wrap section.switch-content > .contenu .content-blocks .xlinks-list > * {
+  #site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad {
     flex: 0 1 100%;
   }
 }
-#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list > * a {
+#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad .info {
   position: relative;
   background: center no-repeat;
   background-size: cover;
-  border-radius: 2em;
+  border-radius: 1.5em;
+  font-size: 1.5vw;
   color: white;
 }
-#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list > * a:before {
+#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad .info:before {
   content: '';
   display: block;
   padding-top: 100%;
 }
-#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list > * a > * {
+#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad .info > * {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
 }
-#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list > * a h4 {
+@media screen and (min-width: 1440px) {
+  #site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad .info {
+    font-size: 21.6px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad .info {
+    font-size: 4vw;
+  }
+}
+#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad .info > * {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: white;
-  padding: 1em;
-  font-size: 3vw;
+  padding: 1em 2em;
 }
-#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list > * a h4 > * {
+#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad .info > * > * {
   max-width: 100%;
 }
-@media screen and (min-width: 1440px) {
-  #site-wrap section.switch-content > .contenu .content-blocks .xlinks-list > * a h4 {
-    font-size: 43.2px;
-  }
+#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad .info > * h4 {
+  font-size: 2em;
+  color: inherit;
+  margin: 0;
 }
-@media screen and (max-width: 576px) {
-  #site-wrap section.switch-content > .contenu .content-blocks .xlinks-list > * a h4 {
-    font-size: 6.5vw;
-  }
+#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad .info > * p {
+  font-weight: bold;
+  line-height: 1.2;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad .info > * .buttonlike {
+  margin-top: auto;
 }
 #site-wrap section.message-us > .contenu .messengers {
   display: flex;
@@ -678,11 +684,6 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
 @media screen and (max-width: 768px) {
   #site-wrap section.message-us > .contenu .phone-number {
     font-size: 8vw;
-  }
-}
-@media screen and (max-width: 768px) and screen and (min-width: 768px) {
-  #site-wrap section.message-us > .contenu .phone-number {
-    font-size: 61.44px;
   }
 }
 [data-module="contentLayout"] .background {
@@ -861,6 +862,14 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
 @media screen and (max-width: 768px) {
   #site-wrap section.generic > .contenu .heading.atlantis-aquaventure {
     background-image: url(../iii/heading-atlantis-aquaventure-mobile.jpg);
+  }
+}
+#site-wrap section.generic > .contenu .heading.img-worlds-of-adventure {
+  background-image: url(../iii/heading-img-worlds-of-adventure-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section.generic > .contenu .heading.img-worlds-of-adventure {
+    background-image: url(../iii/heading-img-worlds-of-adventure-mobile.jpg);
   }
 }
 #site-wrap section.generic > .contenu .heading + .padded-card {
