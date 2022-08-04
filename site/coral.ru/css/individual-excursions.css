@@ -777,19 +777,19 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
   }
 }
 #site-wrap section.generic > .contenu .heading.fishing {
-  background-image: url(../iii/heading-fishing-desktop.jpg);
+  background-image: url(../iii/heading-fishing-02-desktop.jpg);
 }
 @media screen and (max-width: 768px) {
   #site-wrap section.generic > .contenu .heading.fishing {
-    background-image: url(../iii/heading-fishing-mobile.jpg);
+    background-image: url(../iii/heading-fishing-02-mobile.jpg);
   }
 }
 #site-wrap section.generic > .contenu .heading.cruise {
-  background-image: url(../iii/heading-cruise-desktop.jpg);
+  background-image: url(../iii/heading-cruise-02-desktop.jpg);
 }
 @media screen and (max-width: 768px) {
   #site-wrap section.generic > .contenu .heading.cruise {
-    background-image: url(../iii/heading-cruise-mobile.jpg);
+    background-image: url(../iii/heading-cruise-02-mobile.jpg);
   }
 }
 #site-wrap section.generic > .contenu .heading.yacht {
