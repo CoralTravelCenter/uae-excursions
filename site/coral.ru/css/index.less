@@ -283,6 +283,114 @@
 							}
 						}
 					}
+					.padded-card {
+						width: 100%;
+						display: flex;
+						justify-content: space-between;
+						padding: 2em;
+						background-color: #ebebeb;
+						border-radius: 1em;
+						@media screen and (max-width: @mobile-breakpoint) {
+							flex-direction: column;
+							padding: 1.5em 1em;
+						}
+						&:first-of-type {
+							margin-top: 2em;
+						}
+						&.single-line {
+							background-color: #008DCC;
+							align-items: center;
+							padding: 1em 2em;
+							.lefty {
+								color: white;
+								h5 {
+									color: inherit;
+									font-size: 1.2em;
+									text-transform: uppercase;
+									margin: 0;
+								}
+							}
+							.righty {
+								dl.pad {
+									padding: 1em 1.5em;
+								}
+							}
+						}
+						& + .padded-card {
+							margin-top: 1.5em;
+						}
+						p {
+							font-weight: normal;
+							margin: 0;
+							line-height: 1.2;
+						}
+						.lefty, .righty {
+							flex: 0 1 calc(~"50% - 1em");
+							@media screen and (max-width: @mobile-breakpoint) {
+								flex: 1 1 100%;
+							}
+							ul {
+								list-style: disc;
+								padding: 0;
+								font-weight: normal;
+							}
+						}
+						.lefty {
+							.flex-column;
+							h4 {
+								font-size: 1.5em;
+								text-transform: uppercase;
+								margin-bottom: .5em;
+							}
+							>*:nth-child(n+2) {
+								margin-top: .5em;
+							}
+							em {
+								font-weight: normal;
+							}
+						}
+						.righty {
+							@media screen and (max-width: @mobile-breakpoint) {
+								margin-top: 2em;
+							}
+							dl.pad {
+								display: grid;
+								grid-template-columns: 3fr 1fr;
+								gap: .5em 1em;
+								background-color: white;
+								padding: 1.5em;
+								margin: 0;
+								border-radius: 1em;
+								box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+								& + dl.pad {
+									margin-top: 1em;
+								}
+								dt {
+									font-weight: normal;
+									line-height: 1.2;
+									h5 {
+										margin: 0;
+									}
+									em {
+										display: block;
+									}
+								}
+								dd {
+									color: #FFAE00;
+									font-weight: bold;
+									margin: 0;
+									line-height: 1.2;
+									text-align: right;
+									.ue:after {
+										content: ' у.е.';
+									}
+									span.nobr {
+										white-space: nowrap;
+									}
+								}
+							}
+						}
+					}
 
 				}
 

@@ -635,6 +635,123 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
 #site-wrap section.switch-content > .contenu .content-blocks .xlinks-list .pad .info > * .buttonlike {
   margin-top: auto;
 }
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  background-color: #ebebeb;
+  border-radius: 1em;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section.switch-content > .contenu .content-blocks .padded-card {
+    flex-direction: column;
+    padding: 1.5em 1em;
+  }
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card:first-of-type {
+  margin-top: 2em;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card.single-line {
+  background-color: #008DCC;
+  align-items: center;
+  padding: 1em 2em;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card.single-line .lefty {
+  color: white;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card.single-line .lefty h5 {
+  color: inherit;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin: 0;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card.single-line .righty dl.pad {
+  padding: 1em 1.5em;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card + .padded-card {
+  margin-top: 1.5em;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card p {
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.2;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .lefty,
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .righty {
+  flex: 0 1 calc(50% - 1em);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section.switch-content > .contenu .content-blocks .padded-card .lefty,
+  #site-wrap section.switch-content > .contenu .content-blocks .padded-card .righty {
+    flex: 1 1 100%;
+  }
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .lefty ul,
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .righty ul {
+  list-style: disc;
+  padding: 0;
+  font-weight: normal;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .lefty {
+  display: flex;
+  flex-direction: column;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .lefty > * {
+  max-width: 100%;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .lefty h4 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .lefty > *:nth-child(n+2) {
+  margin-top: 0.5em;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .lefty em {
+  font-weight: normal;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section.switch-content > .contenu .content-blocks .padded-card .righty {
+    margin-top: 2em;
+  }
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .righty dl.pad {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 0.5em 1em;
+  background-color: white;
+  padding: 1.5em;
+  margin: 0;
+  border-radius: 1em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .righty dl.pad + dl.pad {
+  margin-top: 1em;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .righty dl.pad dt {
+  font-weight: normal;
+  line-height: 1.2;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .righty dl.pad dt h5 {
+  margin: 0;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .righty dl.pad dt em {
+  display: block;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .righty dl.pad dd {
+  color: #FFAE00;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  text-align: right;
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .righty dl.pad dd .ue:after {
+  content: ' у.е.';
+}
+#site-wrap section.switch-content > .contenu .content-blocks .padded-card .righty dl.pad dd span.nobr {
+  white-space: nowrap;
+}
 #site-wrap section.message-us > .contenu .messengers {
   display: flex;
   justify-content: center;
